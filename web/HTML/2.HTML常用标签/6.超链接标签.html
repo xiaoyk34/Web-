@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接标签</title>
+</head>
+<body>
+    <h1 id="1">超链接标签的格式</h1>
+     <a href="跳转目标" target="弹出窗口方式"> 文本或者是图像 </a>
+
+     <h2>1.外部链接</h2>
+     <a href="http://www.baidu.com" > 百度（当前窗口打开百度）</a>
+     <br>
+     <a href="http://www.baidu.com" target="_blank"> 百度（新窗口打开百度）</a>
+     <br>
+     target 打开窗口的方式 默认的是_self 当前窗口打开页面 _blank新窗口打开页面
+     
+     <h2 id="2">2.内部链接 网站内部之间的互相连接</h2>
+    <a href="5.图像标签.html">上期笔记：5.图像标签</a>
+
+     <h2  id="3">3.空连接</h2>
+     <a href="#"> 还没有考虑好 用#代替</a>
+
+     <h2 id="4">4.下载链接</h2>
+     href后接着 压缩包即可
+     <a href="../img/1.rar"> 下载文件</a>
+     
+     <h2 id="5">5. 网页元素链接</h2>
+     网页中的各种网页元素都可以添加超链接 例如：文本，表格，图片，音频，视频等
+     <a href="../img/1.rar"> <img src="../img/1.jpg" title="点击图片即可下载"></a>
+
+     <h2 id="6">6. 锚点链接</h2>
+    <p> 点击链接，可以快速定位到文本中的某个位置</p>
+     <strong>使用方法 ：href ="#id" 对应位置添加id="id"</strong>
+     
+     <p>
+         <a href="#1">1. 外部链接</a> <br>
+         <a href="#2">2.内部链接 网站内部之间的互相连接</a><br>
+         <a href="#3">3.空连接</a><br>
+         <a href="#4">4.下载链接</a><br>
+         <a href="#5">5. 网页元素链接</a><br>
+         <a href="#6">6. 锚点链接</a><br>
+     </p>
+</body>
+</html>

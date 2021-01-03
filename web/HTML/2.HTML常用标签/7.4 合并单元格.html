@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单元格合并</title>
+</head>
+<body>
+    <h1 align="center">1跟2合并 叫跨列合并<br>
+        4跟7合并 叫跨行合并</h1>
+
+    <table align="center"  border="1" height="249" width="500">
+        <thead>
+            <tr><th>1</th><th>2</th><th>3</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>4</td><td>5</td><td>6</td></tr>
+            <tr><td>7</td><td>8</td><td>9</td></tr>
+        </tbody>
+    </table>
+    <h1>合并单元格三部曲</h1>
+    1. 先确定跨行还是跨列 <br>
+    2. 找到目标单元格 写上何必方式 = 合并的数量 比如 <td colspan=" 2"> </td>    <br>
+    3. 删除多余的单元格
+
+    <h1>例子1： 跨列合并 1 跟2 </h1>
+    <table align="center"  border="1" height="249" width="500">
+        <thead>
+            <tr><th colspan=" 2">1</th><th>3</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>4</td><td>5</td><td>6</td></tr>
+            <tr><td>7</td><td>8</td><td>9</td></tr>
+        </tbody>
+    </table>    
+
+    <h1>例子2： 跨行合并  4  7 </h1>
+    <table align="center"  border="1" height="249" width="500">
+        <thead>
+            <tr><th>1</th><th>2</th><th>3</th></tr>
+        </thead>
+        <tbody>
+            <tr><td rowspan="2">4</td><td>5</td><td>6</td></tr>
+            <tr> <td>8</td><td>9</td></tr>
+        </tbody>
+    </table>
+
+ 
+</body>
+</html>
